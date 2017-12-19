@@ -5,6 +5,7 @@ simple bash script to install factorio headless server as a service
 1. aws account
 2. ec2 instance running ubuntu 16.04
 
+# This script intended for default AWS ec2 server running ubuntu 16.04 with default user [ubuntu]
 # Install
 1. on EC2 management console 
   a. in the instances security group edit inbound rules
@@ -15,7 +16,6 @@ simple bash script to install factorio headless server as a service
     - souce: anywhere
 2. save Factorio.tar.xz to the instance
 3. extract Factorio.tar.xz
-# This script intended for default AWS ec2 server running ubuntu 16.04 with default user [ubuntu]
 4a. Create /home/ubuntu if not using default user [ubuntu]
 4b. Alternatively modify factorio.service with your ~/ home directory
 5. run setup.sh
