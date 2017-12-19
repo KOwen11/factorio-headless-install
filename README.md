@@ -8,15 +8,15 @@ simple bash script to install factorio headless server as a service
 # This script intended for default AWS ec2 server running ubuntu 16.04 with default user [ubuntu]
 # Install
 1. on EC2 management console 
-  a. in the instances security group edit inbound rules
-  b. add a rule 
+  - in the instances security group edit inbound rules
+  - add a rule 
     - type: Custom UDP Rule
     - Protocol: UDP
     - Port Range: 34197
     - souce: anywhere
 2. save Factorio.tar.xz to the instance
-  a. Create /home/ubuntu if not using default user [ubuntu]
-  b. Alternatively modify factorio.service with your home directory
+  - Create /home/ubuntu if not using default user [ubuntu]
+  - Alternatively modify factorio.service with your home directory
 3. extract Factorio.tar.xz
 4. run setup.sh
 
