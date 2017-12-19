@@ -14,16 +14,11 @@ simple bash script to install factorio headless server as a service
     - Protocol: UDP
     - Port Range: 34197
     - souce: anywhere
-    
 2. save Factorio.tar.xz to the instance
-
+  a. Create /home/ubuntu if not using default user [ubuntu]
+  b. Alternatively modify factorio.service with your home directory
 3. extract Factorio.tar.xz
-
-4a. Create /home/ubuntu if not using default user [ubuntu]
-
-4b. Alternatively modify factorio.service with your ~/ home directory
-
-5. run setup.sh
+4. run setup.sh
 
 This will finish by creating a save file and starting the server using default settings. 
 To change settings go to .../factorio/data/ and edit the relevant .json files
