@@ -1,0 +1,11 @@
+[Unit]
+Description=Factorio Server Service
+After=network.target
+
+[Service]
+User=factorio
+ExecStart=/home/ubuntu/factorio/bin/x64/factorio --server-settings /home/ubuntu/factorio/data/server-settings.json --start-server-load-latest --console.log /home/ubuntu/factorio.log
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
